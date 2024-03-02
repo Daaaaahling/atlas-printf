@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _print_percent - prints percent
+ * print_percent - prints percent
  * @args: va_list (voided because unused)
  *
  * Return: 1 success, -1 failure
  */
 
-int _print_percent(va_list args)
+int print_percent(va_list args)
 {
 	char p = '%';
 	(void)args;
