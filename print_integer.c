@@ -8,8 +8,6 @@
  */
 int print_integer(va_list args)
 {
-	int digit_count, swap_index;
-	int buffer_index = 0;
 	char buffer[20]; /* The buffer stores the integer as a string. */
 	long int num;    /* Variable for integer value. */
 	int is_negative = 0; /* to show if the number is negative. */
