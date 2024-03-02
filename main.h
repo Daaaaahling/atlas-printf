@@ -11,4 +11,16 @@ int _print_percent(va_list args);
 int print_integer(va_list args);
 int print_character(va_list args);
 
+/**
+ * struct PrintFormat - struct for format specifiers
+ * @format_specifier: format specifier
+ * @print_function: pointer to print functions
+ */
+
+typedef struct PrintFormat
+{
+	char *format_specifier;
+	int (*print_function)(va_list);
+} PrintFormat;
+
 #endif
