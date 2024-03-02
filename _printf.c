@@ -30,8 +30,10 @@ int _printf(const char *format, ...)
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
+		{
 			/* print the non format specifier  character*/
 			char_count += _putchar(format[i]);
+		}
 		else
 		{
 			for (j = 0; specifiers[j].format_specifier != NULL; j++)
@@ -39,7 +41,7 @@ int _printf(const char *format, ...)
 				if (*specifiers[j].format_specifier == format[i + 1])
 				{
 					/* move past the % character */
-					formatt++;
+					i++;
 					/* Call the matching print function */
 					char_count += specifiers[j].print_function(args);
 					break;
@@ -47,8 +49,10 @@ int _printf(const char *format, ...)
 			}
 
 			if (specifiers[j].format_specifier == NULL && format[i + 1] != '\0')
-				/* print % if specifier is not given */
+			{
+				/* Print % if specifier is not given */
 				char_count += _putchar(format[i]);
+			}
 		}
 	}
 	va_end(args);
