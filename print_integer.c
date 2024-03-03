@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_integer - Prints integer.
  * @args: va_list with the integer to print.
