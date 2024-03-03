@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			for (j = 0; j < 5; b++)
+			for (j = 0; j < 5; j++)
 			{
 				if (*specifiers[j].format_specifier == format[i + 1])
 				{
@@ -52,7 +52,7 @@ int _printf(const char *format, ...)
 				/* -1 if format specifier int given and no more input */
 				return (-1);
 			else if (j == 5 && format[i + 1] != '\0')
-				char_count += _putchar(format[a]);
+				char_count += _putchar(format[i]);
 		}
 	}
 	va_end(args);
