@@ -4,7 +4,7 @@
  * print_character - Prints character
  * args: va_list with characters to print
  *
- * Returns: number of characters printed
+ * Return: number of characters printed
  */
 int print_character(va_list args)
 {
