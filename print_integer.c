@@ -39,13 +39,14 @@ int print_integer(va_list args)
 	
 	while (num > 0);
 	/* Count the number of digits in the integer. */
-	digit_count = buffer_index;
+	digit_count = strlen(buffer_index);
 	
 	/* Add a - sign if the number is negative. */
 	if (is_negative)
 	{
 		buffer[buffer_index++] = '-';
 	}
+	digit_cont = buffer_index
 
 	/* Reverse the digits in the buffer. */
 	for (swap_index = 0; swap_index < buffer_index / 2; swap_index++)
