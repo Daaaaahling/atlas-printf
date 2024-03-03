@@ -36,23 +36,23 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			for (j = 0; specifiers[j].format_specifier != NULL; j++)
+			for (j = 0; j < 5; b++)
 			{
 				if (*specifiers[j].format_specifier == format[i + 1])
 				{
 					/* move past the % character */
-					i++;
+					format++;
 					/* Call the matching print function */
 					char_count += specifiers[j].print_function(args);
 					break;
 				}
 			}
-
-			if (specifiers[j].format_specifier == NULL && format[i + 1] != '\0')
-			{
-				/* Print % if specifier is not given */
-				char_count += _putchar(format[i]);
-			}
+			
+			if (j == 5 && format[i + 1] == '\0')
+				/* -1 if format specifier int given and no more input */
+				return (-1);
+			else if (j == 5 && format[i + 1] != '\0')
+				char_count += _putchar(format[a]);
 		}
 	}
 	va_end(args);
