@@ -46,7 +46,7 @@ int _printf(const char *format, ...)
 					char_count += specifiers[j].print_function(args);
 					break;
 				}
-			}			
+			}
 			if (j == 5 && format[i + 1] == '\0')
 				/* -1 if format specifier int given and no more input */
 				return (-1);
