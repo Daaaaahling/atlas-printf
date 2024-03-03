@@ -2,6 +2,12 @@
 
 This project provides a custom implementation of the `printf` function in C, called `_printf`. It allows you to perform formatted output to the standard output stream (stdout) using various format specifiers.
 
+## Header File
+
+**main.h**
+
+The main.h header file contains the declarations and definitions needed for the custom printf implementation. It provides the necessary prototypes, structures, and macros for the proper functioning of the project. _Printf relies on standard library headers (stdarg.h, unistd.h, and string.h) for handling variable arguments, writing to standard output, and working with strings.
+
 ## Primary Function:
 
 **_printf.c**
