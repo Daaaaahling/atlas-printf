@@ -28,7 +28,7 @@ This function is responsible for printing integers. It handles both positive and
 
 This function prints strings. It takes a va_list containing the string to print and returns the number of characters printed.
 
-**print_percent**
+**print_percent.c**
 
 This function prints a percent sign ("%"). It does not use the va_list parameter and returns the number of characters printed.
 
