@@ -46,7 +46,7 @@ int print_integer(va_list args)
 	{
 		buffer[buffer_index++] = '-';
 	}
-	digit_count = buffer_index
+	digit_count = buffer_index;
 
 	/* Reverse the digits in the buffer. */
 	for (swap_index = 0; swap_index < buffer_index / 2; swap_index++)
