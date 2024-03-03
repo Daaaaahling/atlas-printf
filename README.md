@@ -2,6 +2,30 @@
 
 This project provides a custom implementation of the `printf` function in C, called `_printf`. It allows you to perform formatted output to the standard output stream (stdout) using various format specifiers.
 
+## Primary Function:
+
+**_printf.c**
+
+This function allows you to print characters, strings, integers, and the percent sign ("%") by providing a format string containing special format specifiers. The function iterates through the format string, identifies the specifiers, and calls the corresponding print functions.
+
+## Print Functions:
+
+**print_character.c**
+
+This function is designed to print a single character. It takes a va_list containing the character to print and returns the number of characters printed.
+
+**print_integer.c**
+
+This function is responsible for printing integers. It handles both positive and negative integers and converts them to strings before printing.
+
+**print_string.c**
+
+This function prints strings. It takes a va_list containing the string to print and returns the number of characters printed.
+
+**print_percent**
+
+This function prints a percent sign ("%"). It does not use the va_list parameter and returns the number of characters printed.
+
 ## Usage
 
 To use the `_printf` function, compile the source files using a C compiler:
