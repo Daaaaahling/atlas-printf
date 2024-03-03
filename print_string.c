@@ -10,7 +10,7 @@
 int print_string(va_list args)
 {
 	/* get argument type char* from va_list */
-	char *s = va_args(args, char *);
+	char *s = va_arg(args, char *);
 
 	if (s == NULL)
 		/* default value if string is NULL */
