@@ -77,3 +77,4 @@ _printf("This is a character: %c\n", 'U');
 _printf("The answer is %d\n", 55);
 /* Output: The answer is 55 */
 ```
+![image](https://github.com/Daaaaahling/atlas-printf/assets/155494852/25be862c-fb03-4517-8c79-78c1792f6134)
