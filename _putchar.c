@@ -4,7 +4,7 @@
  * _putchar - writes the character to stdout
  * @c: character
  *
- * Return: characters written o r if error -1
+ * Return: characters written or if error -1
  */
 int _putchar(char c)
 {
